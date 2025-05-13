@@ -207,12 +207,26 @@
     background: #fff;
 }
 
-.mean-container .mean-bar::before {
+/* .mean-container .mean-bar::before {
     color: #fff;
-    content: "mediic";
+    content: "Pulse";
     font-size: 28px;
     font-weight: 600;
     left: 10px;
     position: absolute;
     top: 18px;
+} */
+
+.mean-container .mean-bar::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 80px;       
+    height: 80px;
+    /* bottom:1px; */
+    background-image: url('/assets/images/phpbgrm.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: #fff; */
 }
