@@ -1813,6 +1813,10 @@ ul.testi-rating li {
     border-radius: 30px;
     position: relative;
     z-index: 1;
+    background-image: url('/assets/images/resource/dctr.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .team-single-box {
@@ -1833,10 +1837,10 @@ ul.testi-rating li {
     top: 0;
     width: 0;
     height: 100%;
-    background: url(../images/resource/doctor-set.png);
+    /* background: url(../images/resource/doctor-set.png); */
     background-repeat: no-repeat;
     background-position: right;
-    animation: moveLeftBounce 8s linear infinite;
+    /* animation: moveLeftBounce 8s linear infinite; */
     transition: 0.5s;
     opacity: 0;
 }
@@ -2936,7 +2940,7 @@ span.fill {
 <!-- ============================================================== -->*/
 
 .mediic-appoinment {
-    background-image: url(../images/resource/appoinment.png);
+    background-image: url(/assets/images/resource/appoinment.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 100px 0 100px;
@@ -4529,6 +4533,95 @@ mediic Start Contact Inner Page
 /*mediic  Team details Section 
 ==============================*/
 
+.team-single-box2 {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .team-single-box2:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-thumb {
+    width: 100%;
+    height: 280px; /* Or adjust based on your design */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .team-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .team-content {
+    padding: 15px 10px;
+  }
+  
+  .team-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+  }
+  
+  .team-content h5 {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .social-icon2 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
+  .social-icon2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icon2 ul li {
+    margin-bottom: 8px;
+  }
+    
+  .social-icon2 ul li a:hover {
+    background: #007bff !important;
+  }
+  .social-icon2 ul li a {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease !important;
+    font-size: 16px;
+  }
+  
+  /* Optional: adjust size on smaller screens for responsiveness */
+  @media (max-width: 576px) {
+    .social-icon2 ul li a {
+      width: 32px;
+      height: 32px;
+      font-size: 14px;
+    }
+  }
+  
+
+  
+  .team-section .row > div {
+    margin-bottom: 30px; /* Adjust as needed */
+  }
+  
 .team-details-area {
     padding: 100px 0 100px;
 }
