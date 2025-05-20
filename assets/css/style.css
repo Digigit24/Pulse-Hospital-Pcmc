@@ -50,6 +50,17 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 <--  Mediic Nav Menu Area Css -->
 ==================================*/
 
+/* Hide scrollbar for all elements */
+.hide-scrollbar {
+  scrollbar-width: none;     
+  -ms-overflow-style: none;  
+  overflow: auto;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;              
+}
+
 .mediic_nav_manu {
     transition: 0.5s;
     z-index: 1;
@@ -204,6 +215,7 @@ a.mdy-hover:hover:before {
     visibility: hidden;
     border-top: 2px solid #007eff;
     opacity: 0;
+
 }
 
 .mediic_menu ul li:hover>.sub-menu {
@@ -3325,7 +3337,18 @@ button.submit-btn:hover:after {
 
 .mediic-section {
     padding: 120px 0 120px;
+
 }
+.mediic-section .container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+}
+
+.mediic-section .row {
+  width: 100%;
+  justify-content: center;
+}
+
 
 .mediic-thumb img {
     border-radius: 32px;
@@ -3441,9 +3464,9 @@ mediken Start Contact Inner Page
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ffff;
-    padding-bottom: 50px;
-    margin-bottom: 45px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .contact-title h5 {
@@ -5138,8 +5161,8 @@ span.flaticon-multiply i {
 }
 
 /* Spin Animation */
-
-@keyframes "spin" {
+ 
+ @keyframes "spin" {
     0% {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
@@ -5154,7 +5177,7 @@ span.flaticon-multiply i {
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-}
+} 
 
 @-moz-keyframes spin {
     0% {
